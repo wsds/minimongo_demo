@@ -2165,9 +2165,9 @@ checksum = "6877bb514081ee2a7ff5ef9de3281f14a4dd4bceac4c09388074a6b5df8a139a"
 
 [[package]]
 name = "minimongo"
-version = "0.5.3"
+version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d19a803020c0f1bb7d7c5b476ad168fec6fe8134d15f8ab794a9aee1452b2e2d"
+checksum = "f12c17ba91936b63a198d2ed0704c8394981a705cd80e4cd1cb8a6749a6feb4a"
 dependencies = [
  "actix-cors",
  "actix-web",
