@@ -25,23 +25,23 @@ jobs:
         toolchain: stable
         override: true
 
-    # Step 3: 安装 Node.js 和 npm（Tauri 依赖）
+    # Step 3: 安装 Node.js（pnpm 依赖）
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 18
 
-    # Step 4: 安装 Tauri CLI
-    - name: Install Tauri CLI
-      run: npm install -g @tauri-apps/cli
+    # Step 4: 安装 pnpm
+    - name: Setup pnpm
+      run: npm install -g pnpm
 
-    # Step 5: 安装项目依赖
+    # Step 5: 安装项目依赖（使用 pnpm）
     - name: Install project dependencies
-      run: npm install
+      run: pnpm install
 
     # Step 6: 构建安装包
     - name: Build application
-      run: npm run tauri build
+      run: pnpm run tauri build
 
     # Step 7: 上传构建产物为工作流产物
     - name: Upload artifacts
